@@ -1,0 +1,26 @@
+{%  extends 'base.html.twig' %}
+{% block title %}Read {{ title }}{% endblock %}
+{% block body %}
+{#Renel J.Baptiste#}
+<h1>{{  title }}</h1>
+<div>
+    <p>Can you guess what show bacon pancakes are from?</p>
+    <p>Hint- It's a cartoon</p>
+
+    <p>
+        Guess to win
+
+
+    </p>
+
+</div>
+
+<h2>Comments    ({{ comments|length }})</h2>
+
+<ul>
+    {% for comment in comments %}
+    <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
